@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Open+Sans&family=Plus+Jakarta+Sans:ital@1&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400&family=Secular+One&display=swap" rel="stylesheet">
+    <style>
+
+      body{
+        margin: 0;
+          background-color: ;
+      }
+
+      #header {
+        background-color: #FBA465;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+      }
+
+      #header-img {
+        width: 50px;
+      }
+
+      #nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        border
+      }
+
+      #nav-bar li {
+        margin: 15;
+      }
+
+      #nav-bar li a {
+        font-family: 'Koulen', cursive;
+        font-weight: bold;
+        color: #D1193E;
+        text-decoration: none;
+        letter-spacing: 3px;
+      }
+
+      #title {
+        font-family: 'Koulen', cursive;
+        letter-spacing: 4px;
+        color: #D1193E;
+        text-shadow: 2px 2px white, -2px -2px white;
+        font-size: 45px;
+        padding: 25px 0;
+        margin: auto;
+        text-align: center;
+      }
+
+      #container-services {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 100px;
+        v
+      }
+
+      #container-services .services{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        height: auto;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+
+      .service-description *{
+        font-family: 'Koulen', cursive;
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+      }
+
+      .service-description h2 {
+        display: inline;
+        background-color: #FFFFC0;
+        border: 2px solid gray;
+        border-radius: 0 20px;
+        padding: 0 10px;
+        width: auto;
+        white-space: nowrap;
+
+      }
+      @media screen and (max-width: 1000px) {
+        #container-services {
+          flex-direction: column;
+          align-items: center;
+        }
+        #container-services .services{
+          width: 80%;
+        }
+
+      }
+
+      #video {
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+      }
+
+      @media screen and (min-width: 1000px ) {
+        #video {
+          width: 50%;
+          height: 50%;
+        }
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 150px;
+        align-items: center;
+        margin: 50px auto;
+      }
+
+      #newsletter{
+        font-family: sans-serif;
+        font-size: 20px;
+      }
+
+      #permission {
+        font-family: sans-serif;
+      }
+
+      #submit {
+        background-color: #FBA465;
+        font-family: sans-serif;
+        width: 80px;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 5px 5px 0px gray;
+      }
+
+       #container-pricing {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-around;
+         align-items: stretch;
+         text-align: center;
+         font-family: 'Koulen', cursive;
+         font-size: 14px;
+       }
+
+       #container-pricing .title{
+         background-color: #FBA465;
+         font-weight: bold;
+         color: white;
+         letter-spacing: 2px;
+       }
+
+       .services-pricing {
+         display: flex;
+         flex-flow: column nowrap;
+         border: solid gray;
+         border-radius: 5px;
+         background-color: #f2f2f2;
+         width: 20%;
+         margin: 5%;
+       }
+
+       .btn {
+         margin: 10px 20px;
+         font-family: 'Koulen', cursive;
+         letter-spacing: 2px;
+         background-color: #FBA465;
+         border: none;
+         border-radius: 5px;
+         margin-top: auto;
+       }
+       @media screen and (min-width: 1000px ) {
+
+         #container-pricing {
+           justify-content: center;
+         }
+
+         .services-pricing {
+           width: 10%;
+         }
+
+       }
+
+      footer {
+        height:30px;
+        background-color: #FBA465;
+        width:;
+        text-align: center;
+        font-family: 'Koulen', cursive;
+      }
+
+    </style>
+  </head>
+  <body>
+  <header id="header">
+    <div id="logo"><img id="header-img" src="https://icons.iconarchive.com/icons/graphicloads/flat-finance/128/diamond-icon.png" alt=""></div>
+    <nav id="nav-bar">
+      <ul>
+      <li>
+        <a href="#header" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="#container-services" class="nav-link">Services</a>
+      </li>
+      <li>
+      <a href="#container-pricing" class="nav-link">Pricing</a>
+      </li>
+      <ul>
+    </nav>
+  </header>
+  <h1 id="title" class="font-effect-outline">IT Services</h1>
+  <div id="container-services">
+    <div class="services">
+      <img id="service-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-devices/128/input-gaming-icon.png">
+      <div class="service-description">
+        <h2>Gaming Services</h2>
+        <p>We provide gaming services like PC building.</p>
+      </div>
+    </div>
+    <div class="services">
+      <img id="service-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-devices/128/network-wireless-hotspot-icon.png">
+      <div class="service-description">
+        <h2>Network Service</h2>
+        <p>Helps you setup your network communications for more secured and reliable network connections.</p>
+      </div>
+    </div>
+    <div class="services">
+      <img id="service-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-devices/128/audio-headphones-icon.png">
+      <div class="service-description">
+        <h2>Customer Services</h2>
+        <p>We have a fast and reliable customer service for aftermarkets services.</p>
+      </div>
+    </div>
+  </div>
+  <div id="vid">
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/u2PKmJkAtH0?controls=0&autoplay=1&loop=1&playlist=u2PKmJkAtH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <span id="newsletter">Newsletter</span>
+    <input id="email" type="email" name="email"  placeholder="enter your email address">
+    <p id="permission">Do you agree to receive newsletter?</p>
+    <a href="https://www.freecodecamp.com/email-submit" target="_blank">
+    <input id="submit" type="submit" value="Agree">
+    </a>
+  </form>
+  </div>
+
+  <div id="container-pricing">
+    <div class="services-pricing">
+      <div class="title">Gaming</div>
+      <div>Lorem ipsum.</div>
+      <div>Lorem ipsum wow.</div>
+      <div>Lorem ipsum.</div>
+      <button class="btn">SELECT</button>
+    </div>
+    <div class="services-pricing">
+      <div class="title">Networking</div>
+      <div>Lorem ipsum.</div>
+      <div>Lorem ipsum hello.</div>
+      <div>Lorem ipsum.</div>
+      <div>Lorem ipsum something.</div>
+      <button class="btn">SELECT</button>
+    </div>
+    <div class="services-pricing">
+      <div class="title">Tech Support</div>
+      <div>Lorem ipsum.</div>
+      <div>Lorem ipsum something.</div>
+      <button class="btn">SELECT</button>
+    </div>
+  </div>
+
+<footer>
+  Copyright &copy 2022. All right reserved.
+</footer>
+
+</body>
+</html>

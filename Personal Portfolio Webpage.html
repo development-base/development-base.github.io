@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Kanit:wght@800&family=Koulen&family=Open+Sans&family=Plus+Jakarta+Sans:ital@1&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400&family=Secular+One&display=swap" rel="stylesheet">
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a{
+    border-bottom: 1px solid #E3E3E3;
+    padding: 5px;
+  }
+
+  .dropdown-list {
+    display: none;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Koulen', cursive;
+    letter-spacing:8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    background-color: #424547;
+  }
+
+  #btn-drop {
+    height: 100%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    width: 30px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #drop-menu:hover .dropdown-list{
+    display: block;
+  }
+
+  #welcome-section {
+    height: 100vh;
+    background-color: #19E6C2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #welcome-section > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    margin: 20px;
+    animation: intro 3s;
+  }
+
+  #welcome-section p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #424547;
+    animation: welcome 15s;
+  }
+
+  @keyframes intro {
+    0% {
+      transform: scale(5);
+      opacity: .1;
+    }
+  }
+
+  @keyframes welcome {
+    0% {
+      color: red;
+      opacity: 0;
+    }
+  }
+
+  #projects {
+    background-color: #E3E3E3;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 1.2rem;
+    padding-bottom: 20px;
+  }
+
+  #my-projects {
+    display: block;
+    padding-bottom: 100px;
+
+  }
+
+  .project-tile  {
+    background-color: #BEBEBE;
+    border-radius: 10px;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .project-tile {
+      min-width: 400px;
+    }
+  }
+
+  .project-tile p {
+    letter-spacing: 2px;
+    background-color: gray;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px 50px;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+
+  @media screen and (max-width: 450px) {
+    #grid-container {
+      grid-template-columns: auto;
+    }
+
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Koulen', cursive;
+    background-color: gray;
+  }
+
+</style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">Home</a>
+    <div id="drop-menu">
+      <span id="btn-drop">&#9776;</span>
+      <a class="dropdown-list" href="#projects">Projects</a>
+      <a class="dropdown-list" id="profile-link" href="https://www.freecodecamp.org/fcc407bb545-fb6a-48b4-b843-e3605975178f" target="_blank">Profile</a>
+    </div>
+  </nav>
+  <section id="welcome-section">
+    <h1>Hello I'm Neil</h1>
+    <p>welcome to my webpage</p>
+  </section>
+  <section id="projects">
+    <h2 id="my-projects">My Projects</h2>
+    <div id="grid-container">
+      <a class="project-tile">
+        <img src="https://icons.iconarchive.com/icons/sora-meliae/matrilineare/128/Apps-inkscape-icon.png">
+        <p>LOREM IPSUM </p>
+      </a>
+      <a class="project-tile">
+        <img src="https://icons.iconarchive.com/icons/sora-meliae/matrilineare/128/Apps-system-file-manager-icon.png">
+        <p>LOREM IPSUM </p>
+      </a>
+      <a class="project-tile"><img src="https://icons.iconarchive.com/icons/sora-meliae/matrilineare/128/Apps-addressbook-icon.png">
+        <p>LOREM IPSUM </p>
+      </a>
+      <a class="project-tile"><img src="https://icons.iconarchive.com/icons/sora-meliae/matrilineare/128/Apps-dconf-editor-icon.png">
+        <p>LOREM IPSUM </p>
+      </a>
+    </div>
+  </section>
+  <footer>Copyright &copy 2022. All rights reserved. </footer>
+</body>
+</html>
