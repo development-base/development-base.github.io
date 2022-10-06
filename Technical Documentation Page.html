@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <title>Documentation Page</title> 
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -12,10 +15,22 @@
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 250px;
+      width: 250px;
       border-right: 5px solid gray;
       height: 100%;
       box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 768px) {
+      #navbar {
+        border: none;
+        width: 100%;
+        text-align: center;
+        background-color: #F0F0F0;
+        height: 70px;
+        border-bottom: 2px solid gray;
+      }
+ 
     }
 
     #main-doc {
@@ -25,12 +40,21 @@
       font-size: 20px;
     }
 
+    @media screen and (max-width: 768px) {
+      #main-doc {
+        margin-left: 0;
+        margin-top: 70px;
+      }
+
+
+    }
     #navbar * {
       list-style: none;
       text-decoration: none;
       padding: 0;
       letter-spacing: 2px;
       color: black;
+      box-sizing: border-box;
     }
 
     #navbar li,
@@ -38,11 +62,19 @@
       border-top: 2px solid gray;
       padding: 20px;
     }
-
     #nav-header {
+      box-sizing: border-box;
       font-size: 20px;
       font-weight: bold;
       letter-spacing: 4px;
+      height: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      #nav-list {
+        display: none;
+        z-index: 999;
+      }
     }
 
     #main-doc header {
@@ -50,14 +82,13 @@
       font-weight: bold;
     }
 
-    @media screen and (max-width: 400) {}
   </style>
 </head>
 
 <body>
   <nav id="navbar">
     <header id="nav-header">Speakable Me</header>
-    <ul>
+    <ul  id="nav-list">
       <li>
         <a href="#Statement_of_Objectives" class="nav-link">Statement of Objectives
         </a>
@@ -143,6 +174,7 @@
       <code></code>
     </section>
   </main>
+  <script src="doc_page.js"></script>
 </body>
 
 </html>

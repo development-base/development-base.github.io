@@ -1,78 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<name>Tribute Page</name>
 	<style>
-	@import url('https://fonts.googleapis.com/css?family=Koulen|Roboto|Playfair+Display');
-	body{
-		margin: 0;
-		color: white;
-	}
-	#header{
-	background-color: black;
-	  text-shadow: 5px 5px 10px #9A7665;
-	  text-align: center;
-	  font-family: 'Koulen', san-serif;
-	  box-sizing: border-box;
-		margin-top: 20px;
-	padding-bottom: 20px;
-	}
-	#img-div{
-	  text-align: center;
-		padding: 25px;
-	  background-color: gray;
-	  margin: 0;
-	}
-	#image{
-	  max-width: 400px;
-	  display: block;
-	  margin: auto;
-	}
-	#title{
-		letter-spacing: 5px;
-		font-size: 90px;
-		margin: 0;
-		padding: 0;
-	}
-	p{
-		margin: 0;
-	}
-	#img-caption{
-		font-family: 'Roboto', san-serif;
-		font-style: italic;
-		font-size: 20px;
-		margin-top: 10px;
-	}
-	#tribute-info{
-		font-family: 'Playfair Display', san-serif;
-		color: black;
-		text-align: justify;
-		font-weight: bold;
-		margin: 20px 50px  0 50px;
-	}
-	@media (max-width: 490px){
-		p{
-			color: blue;
+		@import url('https://fonts.googleapis.com/css?family=Koulen|Roboto|Playfair+Display');
+
+		body {
+			margin: 0;
+			color: white;
 		}
-	}
+
+		#header {
+			background-color: black;
+			text-shadow: 5px 5px 10px #9A7665;
+			text-align: center;
+			font-family: 'Koulen', san-serif;
+			box-sizing: border-box;
+			margin-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		#img-div {
+			text-align: center;
+			padding: 25px;
+			background-color: gray;
+			margin: 0;
+		}
+
+		#image {
+			max-width: 400px;
+			display: block;
+			margin: auto;
+		}
+
+		#name {
+			letter-spacing: 5px;
+			font-size: 90px;
+			margin: 0;
+			padding: 0;
+		}
+
+		#title {
+			font-size: 1.6rem;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		#img-caption {
+			font-family: 'Roboto', san-serif;
+			font-style: italic;
+			font-size: 20px;
+			margin-top: 10px;
+		}
+
+		#tribute-info {
+			font-family: 'Playfair Display', san-serif;
+			color: black;
+			text-align: justify;
+			font-weight: bold;
+			margin: 20px 50px 0 50px;
+		}
+
+		@media screen and (max-width: 768px) {
+			#name {
+				font-size: 3rem;
+			}
+
+			#title {
+				font-size: 1.2rem;
+			}
+		}
 	</style>
 </head>
+
 <body>
 	<main id="main">
-	<header id="header">
-		<h1 id="title">Albert Einstein</h1>
-		<p>Theoretical physicist</p>
-	</header>
+		<header id="header">
+			<h1 id="name">Albert Einstein</h1>
+			<p id="title">Theoretical physicist</p>
+		</header>
 
-	<figure id="img-div">
-		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg">
-		<figcaption id="img-caption">"I have no special talent. I am only passionately curious."</figcaption>
-	</figure>
+		<figure id="img-div">
+			<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg">
+			<figcaption id="img-caption">"I have no special talent. I am only passionately curious."</figcaption>
+		</figure>
 
-	<p id="tribute-info">Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest and most influential
-		physicists of all time. Einstein is best known for developing the theory of relativity,
-		but he also made important contributions to the development of the theory of quantum mechanics.
-		<a id="tribute-link" href="" target="_blank">Wikipedia</a>
-	</p>
+		<p id="tribute-info">Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the
+			greatest and most influential
+			physicists of all time. Einstein is best known for developing the theory of relativity,
+			but he also made important contributions to the development of the theory of quantum mechanics.
+			<a id="tribute-link" href="" target="_blank">Wikipedia</a>
+		</p>
 	</main>
 </body>
+
 </html>
