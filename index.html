@@ -12,7 +12,8 @@
 	<style>
 		body {
 			font-family: 'Roboto', sans-serif;
-			background-color: #F0F0F0;
+			background-color: rgb(235, 235, 235);
+			margin-top: 30px;
 		}
 
 		#project-container {
@@ -25,16 +26,20 @@
 			flex-flow: column nowrap;
 			justify-content: space-evenly;
 			align-items: center;
-			border-radius: 10px;
+			border-radius: 0 0 10px 10px;
 		}
 
 		h1 {
 			text-align: center;
-			color: #03045E;
-			text-shadow: 2px 2px 5px #47808b;
+			color: white;
+			/* text-shadow: 2px 2px 5px black; */
 			letter-spacing: 3px;
-			/* background-color: #CAF0F8; */
+			background-color: #5468FF;
 			font-size: 2.5rem;
+			max-width: 80vw;
+			margin: auto;
+			border-radius: 10px 10px 0 0;
+			padding: 10px 0 10px 0;
 		}
 
 		.item {
@@ -44,7 +49,7 @@
 			flex-flow: column nowrap;
 			justify-content: center;
 			align-items: center;
-			background-color: #0077b6;
+			background-color: #4181E8;
 			width: 75vw;
 			font-size: 1.6rem;
 			color: white;
@@ -56,17 +61,43 @@
 			text-decoration: none;
 			color: white;
 		}
+
+		@media screen and (min-width: 768px) {
+
+			h1 {
+				max-width: 800px;
+			}
+
+			#project-container {
+				max-width: 800px;
+			}
+
+			.item {
+				width: 700px;
+			}
+
+		}
 	</style>
 </head>
 
 <body>
 	<h1>Sample Projects</h1>
 	<div id="project-container">
-		<a href="Personal Portfolio Webpage.html" target="_blank"><div class="item">Personal Portfolio Webpage</div></a>
-		<a href="Product Landing Page.html" target="_blank"><div class="item">Product Landing Page</div></a>
-		<a href="Survey Form.html" target="_blank"><div class="item">Survey Form</div></a>
-		<a href="Technical Documentation Page.html" target="_blank"><div class="item">Technical Documentation Page</div></a>
-		<a href="Tribute Page.html" target="_blank"><div class="item">Tribute Page</div></a>
+		<a href="Personal Portfolio Webpage.html" target="_blank">
+			<div class="item">Personal Portfolio Webpage</div>
+		</a>
+		<a href="Product Landing Page.html" target="_blank">
+			<div class="item">Product Landing Page</div>
+		</a>
+		<a href="Survey Form.html" target="_blank">
+			<div class="item">Survey Form</div>
+		</a>
+		<a href="Technical Documentation Page.html" target="_blank">
+			<div class="item">Technical Documentation Page</div>
+		</a>
+		<a href="Tribute Page.html" target="_blank">
+			<div class="item">Tribute Page</div>
+		</a>
 	</div>
 </body>
 
