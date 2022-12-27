@@ -17,7 +17,7 @@
 		}
 
 		#main-container {
-
+			
 		}
 
 		#project-container {
@@ -114,14 +114,34 @@
 			}
 		}
 
-		@media screen and (max-width: 400px){
-	
-		}
 
 		@media screen and (max-width: 370px) {
 			.bullet {
 				width: 5px;
 				height: 5px;
+			}
+			.item-container:hover {
+				font-size: 16px;
+			}
+
+			#project-container {
+				height: 400px;
+			}
+			.item-container {
+				height: 50px;
+			}
+			h1 {
+				font-size: 1rem;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			body {
+				height: 100vh;
+				margin-top: -40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
 	</style>
@@ -150,7 +170,7 @@
 
 			<a class="item-container" href="Technical Documentation Page.html" target="_blank">
 				<div class="bullet" style="background-color:rgb(0, 0, 0);"></div>
-				<div class="item">Technical Documentation Page</div>
+				<div class="item">Documentation Page</div>
 			</a>
 
 			<a class="item-container" href="Tribute Page.html" target="_blank">
