@@ -30,6 +30,7 @@
       flex-direction: row;
       justify-content: space-around;
       list-style: none;
+      
     }
 
     #nav-bar li {
@@ -88,7 +89,11 @@
       padding: 0 10px;
       width: auto;
       white-space: nowrap;
+      font-size: 1.3rem;
+    }
 
+    #service-icon {
+      width: 100px;
     }
 
     @media screen and (max-width: 1000px) {
@@ -201,6 +206,34 @@
       text-align: center;
       font-family: 'Koulen', cursive;
     }
+
+    #header-img {
+      width: 50px;
+    }
+
+    @media screen and (max-width: 400px) {
+      #header {
+        display: block;
+      }
+
+      #header-img {
+        display: none;
+      }
+
+      #nav-bar ul {
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 340px) {
+      html {
+        font-size: 13px;
+      }
+      
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 
@@ -219,7 +252,7 @@
         <li>
           <a href="#container-pricing" class="nav-link">Pricing</a>
         </li>
-        <ul>
+      </ul>
     </nav>
   </header>
   <h1 id="title" class="font-effect-outline">IT Services</h1>
@@ -251,8 +284,8 @@
   </div>
   <div id="vid">
     <iframe id="video" width="560" height="315"
-      src="https://www.youtube.com/embed/u2PKmJkAtH0?autoplay=1&mute=1&controls=0&playlist=u2PKmJkAtH0&loop=1" title="YouTube video player"
-      frameborder="0" allow="autoplay" allowfullscreen></iframe>
+      src="https://www.youtube.com/embed/u2PKmJkAtH0?autoplay=1&mute=1&controls=0&playlist=u2PKmJkAtH0&loop=1"
+      title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <span id="newsletter">Newsletter</span>
       <input id="email" type="email" name="email" placeholder="enter your email address">
