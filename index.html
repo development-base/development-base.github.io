@@ -14,10 +14,16 @@
 			font-family: 'Merriweather Sans', sans-serif;
 			background-color: rgb(235, 235, 235);
 			margin-top: 30px;
+			
 		}
 
 		#main-container {
-			
+			/* border: 5px solid red; */
+			max-width: 60vw;
+			margin: auto;
+			border-radius: 15px;
+			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+			box-sizing: border-box;
 		}
 
 		#project-container {
@@ -116,12 +122,20 @@
 
 
 		@media screen and (max-width: 370px) {
+			.item-container:hover {
+				font-size: 1rem;
+			}
+
 			.bullet {
 				width: 5px;
 				height: 5px;
 			}
 			.item-container:hover {
-				font-size: 16px;
+				font-size: 10px;
+			}
+
+			#main-container {
+				margin-top: 100px;
 			}
 
 			#project-container {
@@ -155,7 +169,7 @@
 
 			<a class="item-container" href="Personal Portfolio Webpage.html" target="_blank">
 				<div class="bullet" style="background-color:rgb(108, 227, 195);"></div>
-				<div class="item">Personal Portfolio Webpage</div>
+				<div class="item">Personal Portfolio</div>
 			</a>
 
 			<a class="item-container" href="Product Landing Page.html" target="_blank">
