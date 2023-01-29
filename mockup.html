@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mockup</title>
+    <style>
+      body {
+        margin: 0px;
+        font-family: sans-serif;
+        background-color: rgb(34, 36, 37);
+      }
+
+      header {
+        padding: 10px;
+      }
+
+      #main {
+        /* border: 1px solid green; */
+        height: 100vh;
+      }
+
+      #social-medias {
+        float: right;
+      }
+
+      #social-medias > img {
+        padding: 5px;
+      }
+
+      #container-main {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 760px;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #slogan {
+        width: 300px;
+        color: rgb(91, 141, 101);
+      }
+
+      #img-roles {
+        height: 390px;
+      }
+
+      .btn-links {
+        background-color: rgb(70, 120, 80);
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bolder;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        padding: 20px;
+        margin-top: 15px;
+        color: white;
+      }
+
+      #second-main {
+        background-color: rgb(41, 43, 44);
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #container-infobox,
+      #container-cards {
+        width: 40%;
+        margin: 20px;
+      }
+
+      #container-cards {
+        width: 50%;
+      }
+
+      #container-infobox {
+        box-sizing: border-box;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+
+      #btn-links {
+      }
+
+      #container-infobox h2 {
+        color: rgb(134, 196, 146);
+        font-size: 2.6rem;
+      }
+
+      #container-infobox p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.6rem;
+      }
+
+      #second-main > p {
+        color: white;
+      }
+
+      #container-cards {
+        display: flex;
+      
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: rgb(34, 37, 37);
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 15px;
+      }
+
+      .btn-card {
+        background-color: rgb(70, 120, 80);
+        color: white;
+        padding: 10px;
+        margin-top: 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      .card-icon {
+        width: 64px;
+      }
+
+      #container-cards p {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .card-links {
+        text-decoration: none;
+        color: rgb(255, 255, 255, 0.8);
+        border-bottom: 2px solid rgb(134, 196, 146);
+      }
+
+      #container-cards h3 {
+        font-size: 1.7rem;
+        color: rgb(70, 120, 80);
+      }
+
+      @media (max-width: 768px) {
+        #main {
+          height: 800px;
+        }
+        #img-roles {
+          padding-top: 50px;
+          max-width: 70%;
+          height: auto;
+          margin: auto;
+        }
+        #container-main {
+          flex-flow: column;
+          width: auto;
+          position: relative;
+          padding: 10px;
+          position: relative;
+        }
+
+        #container-infobox, #container-cards {
+         width: 100%;
+         margin: 0;
+         
+        }
+        
+        #second-main {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        #container-infobox {
+          padding-left: 5px;
+          text-align: center;
+          margin: 30px auto;
+        }
+
+        #container-infobox .btn-links {
+          margin: auto;
+        }
+
+        #container-infobox h2 {
+          margin: auto;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img id="" src="img/be-patient-2.png" width="32px" />
+      <div id="social-medias">
+        <img src="img/menu.png" />
+        <img src="img/facebook.png" />
+        <img src="img/instagram.png" />
+        <img src="img/twitter.png" />
+      </div>
+    </header>
+    <div id="main">
+      <div id="container-main">
+        <div id="container-slogan">
+          <h1 id="slogan">One-click solution for your static website.</h1>
+          <div id="links">
+            <a href="#" class="btn-links">Upload for Free</a>
+            <a href="#" class="btn-links">Watch Video</a>
+          </div>
+        </div>
+        <img id="img-roles" src="img/xcc-min.png" />
+      </div>
+    </div>
+
+    <div id="second-main">
+      <div id="container-infobox">
+        <h2>Hosting solution with benefits.</h2>
+        <p>
+          Turn your ideas into reality with Static. With a lot of powerful
+          features, we guarantee simplicity and clarity.
+        </p>
+        <a href="#" class="btn-links">read more</a>
+      </div>
+
+      <div id="container-cards">
+        <div class="card">
+          <img class="card-icon" src="img/ssl.png" />
+          <a href="#" class="btn-card">FREE</a>
+          <h3>SSL Certificate</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur
+          </p>
+          <a class="card-links" href="#">MORE</a>
+        </div>
+
+        <div class="card">
+          <img class="card-icon" src="img/configuration.png" />
+          <h3>Code Editor</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur
+          </p>
+          <a class="card-links" href="#">MORE</a>
+        </div>
+
+        <div class="card">
+          <img class="card-icon" src="img/domain-registration.png" />
+          <h3>Personal Domain</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur
+          </p>
+          <a class="card-links" href="#">MORE</a>
+        </div>
+
+        <div class="card">
+          <img class="card-icon" src="img/cloud-data.png" />
+          <a href="#" class="btn-card">FREE</a>
+          <h3>Media Storage</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur
+          </p>
+          <a class="card-links" href="#">MORE</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
